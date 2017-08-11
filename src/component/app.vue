@@ -1,9 +1,8 @@
 
 <template>
     <div>
-        <cHeader> </cHeader>
-        
-        <cFooter> </cFooter>
+        <v-header> </v-header> 
+        <v-footer> </v-footer>
     </div>
 </template>
 
