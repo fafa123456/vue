@@ -23,7 +23,14 @@ module.exports = {
         }, {
             test: /\.html$/,
             use: 'html-loader'
-        }, {
+        },{
+            test: /\.(png|jpg|gif|ttf)$/,
+            use: [
+                    // 大约小于10kb的图片变成base64编码继承到js中，比较大的图片仍然以url方式引入
+                    { loader: 'url-loader', options: { limit: 10000 } }
+                    // 'image-webpack-loader'
+                ]
+        },{
             test: /\.js$/,
             use: {
                 loader: 'babel-loader',

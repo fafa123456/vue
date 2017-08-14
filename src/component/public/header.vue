@@ -1,6 +1,7 @@
 <template>
     <header>
-        <div>这个头部信息</div>
+        <mt-header fixed title="头部"></mt-header>
+        <div class='head'></div>
     </header>
 </template>
 
@@ -13,6 +14,8 @@ export default {
 </script>
 
 <style>
-
+    .head{
+        height: 40px;
+    }
 </style>
 
