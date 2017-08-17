@@ -1,8 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueResource from 'vue-resource';
-import MintUi from 'mint-ui';//引入mint ui插件 
-
+import MintUi from 'mint-ui';//引入mint ui插件
+import Vuepicview from 'vue-picture-preview' 
+import VuePreview from 'vue-preview'
 
 import cRout from '../component/app.vue';
 import routerConfig from './router.js';
@@ -12,6 +13,12 @@ import '../../node_modules/mui/examples/hello-mui/css/icons-extra.css'
 Vue.use(VueRouter);
 Vue.use(VueResource);
 Vue.use(MintUi);
+Vue.use(Vuepicview);
+Vue.use(VuePreview);
+
+Vue.filter('time-filter', function (time) {
+    return time.slice(0, 10).split('-').join('/') + '  ' + time.slice(11, 19)
+});
 new Vue({
     el: '#box',
     render: function (c) {
@@ -20,6 +27,3 @@ new Vue({
     router: routerConfig
 })
 
-Vue.filter('time-filter', function (time) {
-    return time.slice(0,10).split('-').join('/')+'  '+time.slice(11,19)
-})

@@ -18,13 +18,14 @@
 </template>
 
 <script>
-import Ntitle from './title.vue';
+import Ntitle from '../public/title.vue'
 import config from '../../js/config.js';
 export default {
     data() {
         return {
             newslist: '',
-            title: '新闻资讯'
+            title: '新闻资讯',
+            flag: false
         }
     },
     components: {
@@ -43,22 +44,26 @@ export default {
     created() {
         this.getnews()
     }
-
 }
 </script>
 
 <style lang="less">
 .rfloat {
     float: right;
-    color: #999 
+    color: #999
 }
 
 .mui-icon-extra-like {
-        font-size: 15px;
-        padding-right:5px; 
-    }
-    .cc{
-        color: #999;
-         font-size: 15px;
-    }
+    font-size: 15px;
+    padding-right: 5px;
+}
+
+.cc {
+    color: #999;
+    font-size: 15px;
+}
+
+.nlist {
+  
+}
 </style>

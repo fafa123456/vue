@@ -8,7 +8,7 @@
                 </a>
             </li>
             <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-                <a href="#">
+                <a href="#/picture/list/0">
                     <span class="mui-icon mui-icon-image">
                         <span class="mui-badge">5</span>
                     </span>
@@ -16,8 +16,8 @@
                 </a>
             </li>
             <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-                <a href="#">
-                    <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+                <a href="#/goods/list/1">
+                    <span class="mui-icon mui-icon-extra mui-icon-extra-hotel"></span>
                     <div class="mui-media-body">商品购买</div>
                 </a>
             </li>
@@ -66,7 +66,7 @@ export default {
     .mui-grid-view.mui-grid-9 .mui-media .mui-icon {
         font-size: 2em;
     } 
-    .mui-icon-extra-new:before,.mui-icon-extra-cart:before,.mui-icon-search:before,.mui-icon-phone:before,.mui-icon-gear:before,.mui-icon-info:before,.mui-icon-more:before,.mui-icon-image:before{
+    .mui-icon-extra-new:before,.mui-icon-extra-hotel:before,.mui-icon-search:before,.mui-icon-phone:before,.mui-icon-gear:before,.mui-icon-info:before,.mui-icon-more:before,.mui-icon-image:before{
         color:#007aff;
     }
 }

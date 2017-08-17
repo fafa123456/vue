@@ -5,12 +5,12 @@
 				<span class="mui-icon mui-icon-home"></span>
 				<span class="mui-tab-label">首页</span>
 			</a>
-			<a class="mui-tab-item" href="#tabbar-with-chat">
+			<a class="mui-tab-item" href="#/goods/list/1">
                 <span class="mui-icon mui-icon-extra mui-icon-extra-gift"></span>
 				<span class="mui-tab-label">商城</span>
 			</a>
-			<a class="mui-tab-item" href="#tabbar-with-contact">
-				<span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge">9</span></span>
+			<a class="mui-tab-item" href="#tabbar-with-contact" v-cloak>
+				<span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge" id="mui-badge">{{kucun}}</span></span>
 				<span class="mui-tab-label">购物车</span>
 			</a>
 			<a class="mui-tab-item" href="#tabbar-with-map">
@@ -23,8 +23,13 @@
 </template>
 
 <script>
+import goods from '../../js/goods/gstrodata.js';
 export default {
-    
+    data(){
+		return{
+			kucun:goods.get()
+		}
+	}
 }
 </script>
 
