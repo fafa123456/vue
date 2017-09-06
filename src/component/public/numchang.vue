@@ -1,6 +1,5 @@
 <template>
     <section class='numbox'>
-        <span class='btn-sl'>购买数量: </span>
         <div class="mui-numbox">
             <button class="mui-btn mui-btn-numbox-minus" type="button" @click='goodsup(shu-1)'>-</button>
             <input class="mui-input-numbox" type="text" v-model='shu' :value="shu">

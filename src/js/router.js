@@ -7,6 +7,7 @@ import PictureS from '../component/Pictureshar/Picturelist.vue';
 import Picdetails from '../component/Pictureshar/Picdetails.vue';
 import goodslist from '../component/goods/goodslist.vue';
 import goodsdetails from '../component/goods/goodsdetails.vue';
+import cartList from '../component/shopcart/list.vue';
 
 export default new VueRouter({
     routes:[
@@ -18,5 +19,6 @@ export default new VueRouter({
         {path:'/picture/picdetails/:id',component:Picdetails},//图片分享列表的路由
         {path:'/goods/list/:id',component:goodslist},//商品列表的路由
         {path:'/goods/details/:id',component:goodsdetails},//商品详情的路由
+        {path:'/cart/list',component:cartList},//购物车列表路由
         ]
 })

@@ -13,5 +13,6 @@ export default{
     goodsdetails:domian+'api/getthumimages/',
     goodsprice:domian+'api/goods/getinfo/',//商品价格
     goodspicdl:domian+'api/goods/getdesc/',//图文详情接口
+    cartlist:domian+'api/goods/getshopcarlist/',//购物车列表接口
 
 }

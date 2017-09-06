@@ -12,6 +12,7 @@
                             现价:￥{{goodsprice.sell_price}}
                         </p>
                     </div>
+                    <span class='btn-sl'>购买数量: </span>
                     <v-numbox :total='total' @backvalue='gettotal'></v-numbox>
                     <div>
                         <button type="button" class="mui-btn mui-btn-warning mui-btn-block" @click='addcart'>加入购物车</button>
@@ -87,12 +88,10 @@ export default {
         gettotal(value) {
             this.total = value;
         }, gobuy() {
-
+            this.$router.push('/cart/list');
         }, addcart() {
-            goods.set(this.id, this.total);
-            document.getElementById('mui-badge').innerText = goods.get();
+            this.$store.commit('set', {id:this.id, val:this.total});
         }
-
     },
     created() {
         this.getdetails();
